@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "dogDetect",
+    "slug": "dogDetect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Doggy Detection to access your camera."
+        }
+      ],
+      "react-native-vision-camera"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "DoggyDetection needs access to your Camera.",
+        "NSMicrophoneUsageDescription": " DoggyDetection needs access to your Microphone."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.dogDetect"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
